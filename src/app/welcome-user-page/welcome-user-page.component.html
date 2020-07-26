@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-12">
+      <img src="../../assets/images/header-psychology.jpg" width="100%"/>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+      <nav>
+          <ul class="nav justify-content-end nav-tabs">
+              <li><a [routerLink]="['Home']" class="nav-link">Home</a></li>
+              <li><a [routerLink]="['products']" class="nav-link">Products</a></li>
+              <li><a [routerLink]="['category']" class="nav-link">Category</a></li>
+              <li><a [routerLink]="['addtocart']" class="nav-link">Add To Cart</a></li>
+              <li><a [routerLink]="['yourouders']" class="nav-link">Your Orders</a></li>
+              <li><a [routerLink]="['/']" class="nav-link">Logout</a></li>
+          </ul>
+      </nav>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+      <router-outlet></router-outlet>
+  </div>
+</div>

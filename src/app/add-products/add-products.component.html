@@ -1,0 +1,55 @@
+<h2 class="text-center">Add Products</h2>
+
+<form  [formGroup]="addproduct" (ngSubmit)="addproducts(addproduct.value)" class="form-addproduct">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Product Name</label>
+                <input type="text" placeholder="Enter Product Name" formControlName="productname" class="form-control" required/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Quantity</label>
+                <input type="number" placeholder="Enter Quantity" formControlName="quantity" class="form-control" required/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Prize</label>
+                <input type="number" placeholder="Enter Prize" formControlName="prize" class="form-control" required/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Category</label>
+                <select class="form-control" formControlName="category" required>
+                    <option value="">--Select Category--</option>
+                    <option value="Mobile">Mobile</option>
+                    <option value="Laptop">Laptop</option>
+                    <option value="TV">TV</option>
+                    <option value="Clothes">Clothes</option>
+                  </select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Images</label>
+                <input type="file" formControlName="images" class="form-control" required/>
+            </div>
+        </div>
+    </div>
+    <input type="submit" value="Add Products" class="btn btn-primary"/>
+</div>
+</form>
+<br>
+<br>

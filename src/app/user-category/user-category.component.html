@@ -1,0 +1,14 @@
+<div class="container">
+  <table class="table">
+      <tr class="table">
+          <th>Category Name</th>
+          <th>Image</th>
+          <th></th>
+      </tr>
+      <tr *ngFor="let c of Categorys">
+          <td>{{c.categoryname}}</td>
+          <td>{{c.Images}}</td>
+          <td><a>Go To Products</a></td>
+      </tr>
+  </table>
+</div>

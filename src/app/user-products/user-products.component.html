@@ -1,0 +1,23 @@
+<br>
+<h2 class="text-center">All Products</h2>
+<br>
+<table class="table">
+    <tr class="table"> 
+        <th>Product Name</th>
+        <th>category</th>
+        <th>prize</th>
+        <th>quantity</th>
+        <th>image</th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let p of product">
+        <td>{{p.productname}}</td>
+        <td>{{p.category}}</td>
+        <td>{{p.prize}}</td>
+        <td>{{p.quantity}}</td>
+        <td>{{p.images}}</td>
+        <td><input type="button" class="btn btn-success" (click)="gotoaddtocart(p)" value="Add To Cart"/></td>
+        <td><input type="button" class="btn btn-success" (click)="goBuy(p)" value="Buy"/></td>
+    </tr>
+</table>

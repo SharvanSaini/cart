@@ -1,0 +1,25 @@
+<div class="row">
+  <header class="col-md-12">
+      <img width="100%" src="../../assets/images/header images.jpg"/>
+  </header>
+</div>
+<div class="container">
+  <div class="row">
+      <nav class="col-md-12">
+          <ul class="nav justify-content-end nav-tabs">
+              <li><a class="nav-link" [routerLink]="['userlogin']" routerLinkActive="active">User Login</a></li>
+              <li><a class="nav-link" [routerLink]="['adminlogin']" routerLinkActive="active">Admin Login</a></li>
+          </ul>
+      </nav>
+  </div>
+  <div class="row main-content">
+      <div class="col-md-3">
+          <ul class="nav flex-column nav-tabs">
+              <li><a class="nav-link" [routerLink]="['/portal']">Portal</a></li>
+          </ul>
+      </div>
+      <div class="col-md-9">
+          <router-outlet></router-outlet>
+      </div>
+  </div>
+</div>
